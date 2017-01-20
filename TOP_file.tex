@@ -14,7 +14,7 @@
 \usepackage{eso-pic}
 \usepackage{amsmath}
 
-\author{Tomas Lyngroth \\ Aleksander Holthe \\ Vanja Katinka Halvorsen \\ Stian Fredriksen \\ Kent Kjeldaas \\ Katrine Sundal Haune}
+\author{Aleksander Holthe  \\ Katrine Sundal Haune \\ Kent Kjeldaas \\ Stian Fredriksen \\ Tomas Lyngroth \\ Vanja Katinka Halvorsen}
 
 \makeatletter
 \let\vapiqteam\@author
@@ -53,7 +53,8 @@
 
 
 %% DOCUMENT HISTORY TABLE
-%%%% VERSION NUMBER SHOULD ALWAYS BE THE SAME AS THE COMMENT WHEN SYNCED TO GITHUB %%%%%%%%%%%%%%%
+%%% This table should be updated with all major changes
+%%%% OBS! When syncing with Github, remember to leave comment corresponding with version number from this table
 \begin{center}
 \section*{\textbf{Document History}}
 \begin{tabular}{cllll}
@@ -62,7 +63,7 @@
 
 0.0       & $07.01.17$   & Created .tex-file, standard front page,  & VKH  & Name \\
           &              & tables and structures. Github Synched.   &      & \\\rowcolor{gainsboro}
-0.1       & $00.00.00$   & what was done  & Name    & Name          \\
+0.1       & $19.01.17$   & Started writing   & SF    & SF          \\
 0.2       & $00.00.00$   & what was done  & Name    & Name          \\ \rowcolor{gainsboro}
 0.3       & $00.00.00$   & what was done  & Name    & Neme          \\
 \end{tabular}                                                                   
@@ -76,13 +77,16 @@
 \begin{tabular}{ll}
 \rowcolor{cadetgrey}
     &   \\
-Variable Pitch Quadcopter   & VAPIQ \\\rowcolor{gainsboro}
-Thomas Lyngroth       & TH          \\ 
-Alekander Holthe      & AH          \\\rowcolor{gainsboro}
-Vanja Katinka Halvorsen  & VKH      \\
-Stian Fredriksen      & SF          \\\rowcolor{gainsboro}
-Kent Kjeldaas         & KK            \\
-Katrine Sundal Haune  & KSH       \\\rowcolor{gainsboro}
+Aleksander Holthe      & AH     
+ \\\rowcolor{gainsboro}
+Katrine Sundal Haune  & KSH \\
+Kent Kjeldaas         & KK 
+ \\\rowcolor{gainsboro}
+Stian Fredriksen      & SF  \\
+Tomas Lyngroth       & TL   
+ \\\rowcolor{gainsboro}
+Vanja Katinka Halvorsen     & VKH   \\
+Variable Pitch Quadcopter   & VAPIQ
 \end{tabular}                                                             
 \end{center}
 \newpage
@@ -92,8 +96,8 @@ Katrine Sundal Haune  & KSH       \\\rowcolor{gainsboro}
 
 
 % ABSTRACT
-%\subfile{sections/Abstract}
-
+\subfile{Sections/Abstract}
+\newpage
 
 % LIST OF STUFF
 \tableofcontents
@@ -102,18 +106,18 @@ Katrine Sundal Haune  & KSH       \\\rowcolor{gainsboro}
 %% SEE MAL-file
 
 % INTRODUCTION 
-%\subfile{sections/Introduction}
+%\subfile{Sections/Introduction}
 
 % CHAPTER
-%\subfile{sections/CHAPTER_file}
-%\newpage
+\subfile{Sections/Scrum.tex}
+\newpage
 
 % BASIC TABLE SETUP
-%\subfile{sections/TABLE_MAL_file}
+%\subfile{Sections/TABLE_MAL_file}
 %\newpage
 
 % BASIC PICTURE SETUP
-%\subfile{sections/PICTURE_MAL_file}
+%\subfile{Sections/PICTURE_MAL_file}
 %\newpage
 
 \end{document}
