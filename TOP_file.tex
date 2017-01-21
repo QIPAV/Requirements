@@ -13,6 +13,8 @@
 \usepackage{tikz} 
 \usepackage{eso-pic}
 \usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{hyperref}
 
 \author{Aleksander Holthe  \\ Katrine Sundal Haune \\ Kent Kjeldaas \\ Stian Fredriksen \\ Tomas Lyngroth \\ Vanja Katinka Halvorsen}
 
@@ -43,9 +45,9 @@
         \includegraphics[width = 0.35\textwidth]{VAPIQ-PICTURES//Logo2_Tilted.png}
         \\[2.0 cm] 
     \end{figure}                              
-    \textsc{\Huge REQUIREMENTS}  
+    \textsc{\Huge Requirements Document}  
     \\[1 cm]
-    \textsc{\Large EXTRA NAME}   
+    \textsc{\Large }   
     \\[3.0 cm]
 	\large \vapiqteam      
 \end{titlepage}
@@ -64,7 +66,7 @@
 0.0       & $07.01.17$   & Created .tex-file, standard front page,  & VKH  & Name \\
           &              & tables and structures. Github Synched.   &      & \\\rowcolor{gainsboro}
 0.1       & $19.01.17$   & Started writing   & SF    & SF          \\
-0.2       & $00.00.00$   & what was done  & Name    & Name          \\ \rowcolor{gainsboro}
+0.2       & $21.01.17$   & Added cards for User stories  & SF    &  SF          \\ \rowcolor{gainsboro}
 0.3       & $00.00.00$   & what was done  & Name    & Neme          \\
 \end{tabular}                                                                   
 \end{center}
@@ -101,6 +103,8 @@ Variable Pitch Quadcopter   & VAPIQ
 
 % LIST OF STUFF
 \tableofcontents
+\listoffigures
+\listoftables
 \newpage
 
 %% SEE MAL-file
@@ -110,6 +114,18 @@ Variable Pitch Quadcopter   & VAPIQ
 
 % CHAPTER
 \subfile{Sections/Scrum.tex}
+\newpage
+
+% CHAPTER
+\subfile{Sections/Implementation.tex}
+\newpage
+
+% CHAPTER
+\subfile{Sections/UserStories.tex}
+\newpage
+
+% CHAPTER
+\subfile{Sections/Tasks.tex}
 \newpage
 
 % BASIC TABLE SETUP

@@ -1,0 +1,28 @@
+% IKKE RØR DENNE MODULEN!!!!!!!!! %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\krav}[7]{
+\begin{table}[ht]
+\begin{tabularx}{\linewidth}{| p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.2cm}|}   
+%\setlength\extrarowheight{2pt}
+        \hline
+        \rowcolor{cadetgrey}
+        \multicolumn{6}{|l|}{} \\
+        \rowcolor{cadetgrey} 
+        \centering \Large\textbf{BL ID:} & \centering\Large{Need ID:} & \centering\Large{Jira ID:} & \centering\Large{AC ID:} & \centering \Large{Test ID:} & \centering\Large{Sprint:} \\ 
+        &\cellcolor{gainsboro}&\cellcolor{gainsboro}&\cellcolor{gainsboro} &\cellcolor{gainsboro}  & \cellcolor{gainsboro}& \cellcolor{gainsboro}\\
+         \centering\cellcolor{gainsboro}\textbf{#1} & \centering\cellcolor{gainsboro}\textbf{#2} & \centering\cellcolor{gainsboro}\textbf{#3} & \centering\cellcolor{gainsboro}\textbf{#4} & \centering\cellcolor{gainsboro}\textbf{#5} & \centering\cellcolor{gainsboro}\textbf{#6}  \\ 
+         \multicolumn{2}{|l}{} & \multicolumn{2}{r|}{}
+         \multicolumn{5}{|l}{\large\textbf{User Story}} \multicolumn{6}{r|}{} \\ 
+        \multicolumn{6}{|l|}{#7}  \\ [10pt] \hline
+
+\end{tabularx}
+\end{table}
+\FloatBarrier}
+
+%%  \krav{BL ID}{NEED ID}{Jira ID}{AC ID}{TEST ID}{SPRINT}{User Story}
+%%  \krav{}{}{}{}{}{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\krav{BL002}{N002}{VPQ-16}{n/a}{n/a}{n/a}{As an Engineer, I want a controller so that I can ensure stability for the quadrotor}
+
+\krav{BL013}{N002, N004, N005, N003, N003, N003}{VPQ-29}{AC001, AC002, AC003}{n/a}{1}{As an Engineer, I want a arduino car so that I can test communication in Qualisys}
