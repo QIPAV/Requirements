@@ -12,8 +12,8 @@
 \usepackage{xcolor}
 \usepackage{tikz} 
 \usepackage{eso-pic}
-\usepackage{amsmath}
 \usepackage{tabularx}
+\usepackage{placeins}
 \usepackage{hyperref}
 
 \author{Aleksander Holthe  \\ Katrine Sundal Haune \\ Kent Kjeldaas \\ Stian Fredriksen \\ Tomas Lyngroth \\ Vanja Katinka Halvorsen}
@@ -25,6 +25,31 @@
 \definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}      % Dark Color
 \definecolor{gainsboro}{rgb}{0.86, 0.86, 0.86}      % Light Color
 
+
+% IKKE RØR DENNE MODULEN!!!!!!!!! %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\krav}[7]{
+\begin{table}[ht]
+\begin{tabularx}{\linewidth}{| p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.2cm}|}   
+%\setlength\extrarowheight{2pt}
+        \hline
+        \rowcolor{cadetgrey}
+        \multicolumn{6}{|l|}{} \\
+        \rowcolor{cadetgrey} 
+        \centering \Large{BL ID:} & \centering\Large{Need ID:} & \centering\Large{Jira ID:} & \centering\Large{AC ID:} & \centering \Large{Test ID:} & \centering\Large{Sprint:} \\ 
+        &\cellcolor{gainsboro}&\cellcolor{gainsboro}&\cellcolor{gainsboro} &\cellcolor{gainsboro}  & \cellcolor{gainsboro}& \cellcolor{gainsboro}\\
+         \centering\cellcolor{gainsboro}\textbf{#1} & \centering\cellcolor{gainsboro}\textbf{#2} & \centering\cellcolor{gainsboro}\textbf{#3} & \centering\cellcolor{gainsboro}\textbf{#4} & \centering\cellcolor{gainsboro}\textbf{#5} & \centering\cellcolor{gainsboro}\textbf{#6}  \\
+         & \multicolumn{6}{|l|}{\textbf{}} \\
+         \multicolumn{6}{|l|}{\large\textbf{User Story}} \\ 
+        \multicolumn{6}{|l|}{#7}  \\ [10pt] \hline
+
+\end{tabularx}
+\end{table}
+\FloatBarrier}
+
+%%  \krav{BL ID}{NEED ID}{Jira ID}{AC ID}{TEST ID}{SPRINT}{User Story}
+%%  \krav{}{}{}{}{}{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -45,7 +70,7 @@
         \includegraphics[width = 0.35\textwidth]{VAPIQ-PICTURES//Logo2_Tilted.png}
         \\[2.0 cm] 
     \end{figure}                              
-    \textsc{\Huge Requirements Document}  
+    \textsc{\Huge Backlog and Traceability}  
     \\[1 cm]
     \textsc{\Large }   
     \\[3.0 cm]
@@ -63,11 +88,11 @@
 \rowcolor{cadetgrey}
 \textbf{Version:}    &\textbf{Date:} 	 &\textbf{Comment:}    &\textbf{Done by:}   &\textbf{Approved by:}  \\
 
-0.0       & $07.01.17$   & Created .tex-file, standard front page,  & VKH  & Name \\
+0.0       & $07.01.17$   & Created .tex-file, standard front page,  & VKH  & SF \\
           &              & tables and structures. Github Synched.   &      & \\\rowcolor{gainsboro}
 0.1       & $19.01.17$   & Started writing   & SF    & SF          \\
 0.2       & $21.01.17$   & Added cards for User stories  & SF    &  SF          \\ \rowcolor{gainsboro}
-0.3       & $00.00.00$   & what was done  & Name    & Neme          \\
+0.3       & $22.01.17$   & Completed first draft  & SF    &  SF          \\
 \end{tabular}                                                                   
 \end{center}
 
@@ -91,6 +116,22 @@ Vanja Katinka Halvorsen     & VKH   \\
 Variable Pitch Quadcopter   & VAPIQ
 \end{tabular}                                                             
 \end{center}
+
+\vspace*{2cm}
+
+%% ABRIVIATIONS
+\begin{center}
+\section*{\textbf{Abbreviations}}
+\begin{tabular}{ll}
+\rowcolor{cadetgrey}
+    &   \\
+Backlog ID     & BL ID          \\\rowcolor{gainsboro}
+KONGSBERG Innovation Center & KIC \\
+Acceptance Criteria ID   & AC ID
+\\\rowcolor{gainsboro}
+\end{tabular}                                                             
+\end{center}
+\newpage
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,8 +139,8 @@ Variable Pitch Quadcopter   & VAPIQ
 
 
 % ABSTRACT
-\subfile{Sections/Abstract}
-\newpage
+%\subfile{Sections/Abstract}
+%\newpage
 
 % LIST OF STUFF
 \tableofcontents
@@ -110,30 +151,26 @@ Variable Pitch Quadcopter   & VAPIQ
 %% SEE MAL-file
 
 % INTRODUCTION 
-%\subfile{Sections/Introduction}
+\subfile{Sections/Introduction}
+\newpage
 
-% CHAPTER
+% Scrum
 \subfile{Sections/Scrum.tex}
 \newpage
 
-% CHAPTER
-\subfile{Sections/Implementation.tex}
+% Traceability
+\subfile{Sections/Traceability.tex}
 \newpage
 
-% CHAPTER
+% User Story Cards
 \subfile{Sections/UserStories.tex}
 \newpage
 
-% CHAPTER
+% Task Table
 \subfile{Sections/Tasks.tex}
 \newpage
 
-% BASIC TABLE SETUP
-%\subfile{Sections/TABLE_MAL_file}
-%\newpage
-
-% BASIC PICTURE SETUP
-%\subfile{Sections/PICTURE_MAL_file}
-%\newpage
+% References
+%\subfile{references}
 
 \end{document}

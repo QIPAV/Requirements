@@ -1,28 +1,62 @@
-% IKKE RØR DENNE MODULEN!!!!!!!!! %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\krav}[7]{
-\begin{table}[ht]
-\begin{tabularx}{\linewidth}{| p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.35cm} p{2.2cm}|}   
-%\setlength\extrarowheight{2pt}
-        \hline
-        \rowcolor{cadetgrey}
-        \multicolumn{6}{|l|}{} \\
-        \rowcolor{cadetgrey} 
-        \centering \Large\textbf{BL ID:} & \centering\Large{Need ID:} & \centering\Large{Jira ID:} & \centering\Large{AC ID:} & \centering \Large{Test ID:} & \centering\Large{Sprint:} \\ 
-        &\cellcolor{gainsboro}&\cellcolor{gainsboro}&\cellcolor{gainsboro} &\cellcolor{gainsboro}  & \cellcolor{gainsboro}& \cellcolor{gainsboro}\\
-         \centering\cellcolor{gainsboro}\textbf{#1} & \centering\cellcolor{gainsboro}\textbf{#2} & \centering\cellcolor{gainsboro}\textbf{#3} & \centering\cellcolor{gainsboro}\textbf{#4} & \centering\cellcolor{gainsboro}\textbf{#5} & \centering\cellcolor{gainsboro}\textbf{#6}  \\ 
-         \multicolumn{2}{|l}{} & \multicolumn{2}{r|}{}
-         \multicolumn{5}{|l}{\large\textbf{User Story}} \multicolumn{6}{r|}{} \\ 
-        \multicolumn{6}{|l|}{#7}  \\ [10pt] \hline
+\section{User Story Cards}
 
-\end{tabularx}
-\end{table}
-\FloatBarrier}
 
-%%  \krav{BL ID}{NEED ID}{Jira ID}{AC ID}{TEST ID}{SPRINT}{User Story}
-%%  \krav{}{}{}{}{}{}{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BL001
+\krav{BL001}{N002}{VPQ-16}{}{}{}{As an Engineer, I want a controller so that I can ensure stability for the quadrotor} 
 
-\krav{BL002}{N002}{VPQ-16}{n/a}{n/a}{n/a}{As an Engineer, I want a controller so that I can ensure stability for the quadrotor}
+% BL002
+\krav{BL002}{N012}{VPQ-11}{}{}{}{As a customer, I want easily modifiable design so that I can perform quick modifications}
 
-\krav{BL013}{N002, N004, N005, N003, N003, N003}{VPQ-29}{AC001, AC002, AC003}{n/a}{1}{As an Engineer, I want a arduino car so that I can test communication in Qualisys}
+% BL003
+\krav{BL003}{N010}{VPQ-13}{}{}{}{As a customer, I want the system to weigh less than 2.5kg so that laws and regulations are held}
+
+% BL004
+\krav{BL004}{N004, N019}{VPQ-22}{}{}{}{\shortstack[l]{As an engineer, I want the quadrotor to do basic flight maneuvers \\ so that we can test simple flight dynamics}}
+
+% BL005
+\krav{BL005}{N015}{VPQ-14}{}{}{}{As an engineer, I want a onboard chip so that I can communicate with the external computer} 
+
+% BL006 
+\krav{BL006}{N014, N015}{VPQ-15}{}{}{}{\shortstack[l]{As an engineer, I want a system that communicate with Qualisys \\ so that we can use the tracking system available}} 
+
+% BL007
+\krav{BL007}{N013, N008, N009}{VPQ-23}{}{}{}{As an engineer, i want materials so that we can build the quadrotors}
+
+% BL008
+\krav{BL008}{N003}{VPQ-20}{}{}{}{As a tester, I want to plan the route for the quadrotor so that I can reproduce test results}
+
+% BL009
+\krav{BL009}{N003, N005, N008, N009, N004}{VPQ-18}{}{}{}{\shortstack[l]{As an engineer, I want a mathematical model of flight dynamics so that we can design a \\stable controller}}
+
+% BL010
+\krav{BL010}{N006}{VPQ-17}{}{}{}{\shortstack[l]{As a customer, I want the quadrotors to be as similar as possible \\ so that the comparison is as exact as possible}}
+
+% BL011
+\krav{BL011}{N003, N019}{VPQ-12}{AC004, AC005, AC006}{}{1}{As a software developer, I want a simulation of the quadrotor so that we can simulate flight dynamics}
+
+% BL012
+\krav{BL012}{N008, N009, N013}{VPQ-21}{AC007, AC008}{}{1}{As an engineer, I need components so that we can build a quadrotor}
+
+% BL013
+\krav{BL013}{N002, N014}{VPQ-29}{AC001, AC002, AC003}{}{1}{As an engineer, I want an arduino car so that I can test communication in Qualisys}
+
+% BL014
+\krav{BL014}{N021}{VPQ-59}{AC010}{}{}{As an engineer, I need atleast four markers so that Qualisys is able to identify position in 6DOF}
+
+% BL015
+\krav{BL015}{N007}{VPQ-60}{}{}{}{As an engineer, I want to test power consumption so that we get information about efficency}
+
+% BL016
+\krav{BL016}{N002, N011, N014}{VPQ-61}{}{}{}{As a customer, I want the quadrotor to be smaller than 400mm so that it will fit in KIC test facility}
+
+% BL017
+\krav{BL017}{N008, N009, N020}{VPQ-62}{}{}{}{\shortstack[l]{As a customer, I want the quadcopters to have a X-shaped frame \\ so that the quadrotor does not favor any flight direction}}
+
+% BL018
+\krav{BL018}{N007, N016, N017}{VPQ-63}{}{}{}{As a customer, I want the quadrotor to have sufficient battery so that we are able to test}
+
+% BL019
+\krav{BL019}{N001}{VPQ-19}{}{}{1}{As a student, I need to document our work so that we are able to be evaluated}
+
+% BL020
+\krav{BL020}{N018}{VPQ-64}{}{}{}{As a customer, I want a safety mechanism so that we are able to prevent accidents}
