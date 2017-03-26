@@ -1,40 +1,61 @@
 \section{Traceability}
-Traceability is important in every project and ours is not an exception. To assure traceability we have created a traceability matrix where all the Stakeholders Needs, User Stories, Acceptance Criteria and Test IDs are listed. In this way, we are always able to trace a test all the way back to the need of the stakeholder. \\
+Traceability is important in every project and this one is no exception. To assure traceability a traceability matrix has been created. In the matrix, all the Stakeholders Needs, User Stories, Acceptance Criteria and Test IDs are listed. This ensures traceability throughout the project. \\
 \\
-In Scrum we usually write the user stories on a little piece of paper or a "Post-it"-note. Therefor, we have chosen to represent all the user stories with "User Story Cards". All User Stories are listed later in this document.  \\
-\\
-In this section we will elaborate how the Traceability Matrix is structured and what it includes.
+%In Scrum we ally write the user stories on a little piece of paper or a "Post-it"-note. Therefor, we have chosen to represent all the user stories with "User Story Cards". All User Stories are listed later in this document.  \\
+In this section it will be described how the Traceability Matrix is structured and what it includes.
 
-\subsection{Needs}
-Defining and retrieving stakeholder needs are a crucial part of all projects. All our User Stories can be traced back to the original need of the customer. Because of this, when we test something later in the project, we are able to say which stakeholder need we are fulfilling. This ensures traceability for us and our stakeholders. The Need section (Figure \ref{fig:needs} ) of our Traceability Matrix contains all the stakeholder needs, concern and the uniqe ID of the need. 
+\subsection{Customer Requirements}
+This project is mainly a research project and the customer has provided few initial requirements. The initial requirements given are listed below (Tab. \ref{tab:custreq}). 
+\\
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{|m{2cm} p{2cm} p{2cm} p{7cm} p{1.5cm}|}
+    \begin{tabular}{|m{2cm} p{11cm} p{2cm}|}
+    \hlne
+\rowcolor{cadetgrey}\textbf{Origin: } & \textbf{Requirement: } & \textbf{ID: } \\
+                        FFI & Build a small quadcopter (\<2,5 kg) with fixed pitch & REQ001 \\ 
+\rowcolor{gainsboro}    FFI & Build a small quadcopter (\<2,5 kg) with variable pitch & REQ002\\
+                        FFI & Investigate if variable pitch can give more stable flight and landing in challenging conditions & REQ003  \\ 
+\rowcolor{gainsboro}    FFI & Investigate if variable pitch can improve response time & REQ004\\
+                        FFI & Compare the fixed pitch quadcopter with the variable pitch quadcopter & REQ005  \\
 \hline
-\rowcolor{cadetgrey}    Stakeholder & Concern & Origin & Need & Need ID \\ \hline
-                            FFI & Weight & FFI & Weight must be under 2.5kg because of laws and regulations & N001 \\ 
-\rowcolor{gainsboro}         & & & & \\ 
-                             & & & & \\ 
-\rowcolor{gainsboro}         & & & & \\ 
-\hline    
+
     \end{tabular}
-    \caption{Caption}
+    \caption{Customer Requirements}
+    \label{tab:custreq}
 \end{table}
 
 
+\subsection{Stakeholder Needs}
+Defining and retrieving stakeholder needs is a crucial part of all projects. All the User Stories can be traced back to the original need of the customer. When testing is performed later in the project, it is possible to trace the test back to the stakeholder need. The Need section (Tab. \ref{tab:stakeneeds}) of the Traceability Matrix contains all the stakeholder needs, concerns and their respective unique ID of the need. 
 
-\begin{figure}[h]
+\begin{table}[h]
     \centering
-        \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/Needs}
-    \caption{Extraction of Needs}
-    \label{fig:needs}
-\end{figure}
-\newpage
+    \begin{tabular}{|m{2cm} p{1.5cm} p{9cm} p{2cm}|}
+    \hlne
+\rowcolor{cadetgrey}\textbf{Stakeholder: } & \textbf{Origin: } & \textbf{Need: } & \textbf{Need ID: } \\
+                        HSN & VAPIQ & Documentation & N001 \\ 
+\rowcolor{gainsboro}    KIC & VAPIQ & The quadcopter must be able to be tested in Qualisys & N002\\
+                        KIC & VAPIQ & Control the quadcopter with radio controller or external computer & N015  \\ 
+\rowcolor{gainsboro}    VAPIQ & VAPIQ & Emergency switch & N018 \\
+                        FFI & FFI & Build a small quadcopter (\<2,5 kg) with fixed pitch & N008 \\ 
+\rowcolor{gainsboro}    FFI & FFI & Build a small quadcopter (\<2,5 kg) with variable pitch & N009\\
+                        FFI & FFI & Investigate if variable pitch can give more stable flight and landing in challenging conditions & N022  \\ 
+\rowcolor{gainsboro}    FFI & FFI & Investigate if variable pitch can improve response time & N005\\
+                        FFI & FFI & Compare the fixed pitch quadcopter with the variable pitch quadcopter & N006  \\
+\hline
+
+    \end{tabular}
+    \caption{Stakeholder Needs}
+    \label{tab:stakeneeds}
+\end{table}
+\clearpage
+
+
 
 %%%% Backlog Matrix
 \subsection{Backlog Matrix}
-Our Product Backlog is represented in a Backlog Matrix (Figure \ref{fig:backlog}) where all User Stories get assigned their own unique ID called BL ID. The Backlog Matrix links all the user stories with its corresponding Acceptance Criterion and Need ID. This is done because we want to be able to trace everything we do all the way back to what the customer wants. Every story is linked to an \textbf{Epic}. An Epic is a User Story that is too big to be done in one Sprint. Our project contains some main Epics and all of our user stories falls under one of these Epics. 
+The Product Backlog is represented in a Backlog Matrix (Fig. \ref{fig:backlog}) where all User Stories are assigned their own unique ID called BL ID. The Backlog Matrix links all the user stories with its corresponding Acceptance Criterion and Need ID. This is done to be able to trace everything that's done all the way back to the customer needs. Every story is linked to an \textbf{Epic}. An Epic is a User Story that is too big to be done in one Sprint.
 
 \begin{table}[h]
 \begin{center}
@@ -54,7 +75,7 @@ Our Product Backlog is represented in a Backlog Matrix (Figure \ref{fig:backlog}
 \end{center}
 \end{table}
 \\ 
-\noindent The Backlog Matrix also includes information about which Sprint the given User Story was treated in and what the status of the story is. This status will only change when testing is done.  
+The Backlog Matrix also includes information about which Sprint the given User Story treated and what the status is. 
 
 \begin{figure}[h]
     \centering
@@ -66,7 +87,7 @@ Our Product Backlog is represented in a Backlog Matrix (Figure \ref{fig:backlog}
 \newpage
 
 \subsection{Acceptance Criteria Matrix}
-In the Acceptance Criteria section of the Traceability Matrix(Figure:\ref{fig:acm}) we list every Acceptance Criteria with the corresponding Backlog ID. Every Acceptance Criteria gets a unique ID named AC ID with the syntax ACXXX. 
+In the Acceptance Criteria section of the Traceability Matrix(Figure:\ref{fig:acm}) every Acceptance Criteria is listed with the corresponding Backlog ID. Every Acceptance Criteria gets a unique ID named AC ID with the syntax ACXXX. 
 \begin{figure}[h]
     \centering
         \includegraphics[width = 1\textwidth]{VAPIQ-PICTURES/AC}
@@ -77,18 +98,18 @@ In the Acceptance Criteria section of the Traceability Matrix(Figure:\ref{fig:ac
 \newpage
 
 \subsection{User Story Cards}
-All of our Backlog Items, the User Stories, are represented with "User Story Cards". These cards are supposed to represent the more traditional "User Story Card" often written on paper. As mentioned earlier, User Stories are written from the perspective of the end user and often with the customer in mind. The syntax is "As a/an, I want/need, So that". All our "Requirements" derived from the stakeholder needs are written in this form. \\ 
+All Backlog Items are represented with "User Story Cards". These cards are supposed to represent the more traditional "User Story Card" often written on paper. As mentioned earlier, User Stories are written from the perspective of the end user and often with the customer in mind. This project utilizes User Stories as guidelines and design choices more than requirements because of the few initial requirement provided by the customer. \\ 
 \\
 This is the template for the User Story cards 
 
 \krav{}{}{}{}{}{}{}
 
 
-\noindent \textbf{BL ID} is our Backlog ID for the backlog item, this is created in the Traceability Matrix \\ \\
+\textbf{BL ID} is our Backlog ID for the backlog item, this is created in the Traceability Matrix \\ \\
 \textbf{Need ID} is the unique ID of the customer- or stakeholder need that the User Story are derived from. The needs can be found in the "Need" section of the Traceability Matrix \\ \\
-\textbf{Jira ID} is the automatic ID the user story gets when created in JIRA. As mentioned, all of our tasks and stories are numbered with a JIRA ID starting with VPQ (Variable Pitch Quadcopter). This ID is unique and only used in JIRA. This assures traceability between our manual Backlog and our JIRA Backlog. \\ \\
-\textbf{AC ID} is the ID of the Acceptance Criterion created for the user story. One user story may have multiple Acceptance Criteria.  \\
+\textbf{Jira ID} is the automatic ID the user story gets when created in JIRA. As mentioned, all of the tasks and stories are numbered with a JIRA ID starting with VPQ (Variable Pitch Quadcopter). This ID is unique and only used in JIRA. This assures traceability between the manual Backlog and the JIRA Backlog. \\ \\
+\textbf{AC ID} is the ID of the Acceptance Criterion created for the important user stories. One user story may have multiple Acceptance Criteria.  \\
 \textbf{Test ID} is the ID for the test linked to the user story. \\ \\
-\textbf{Sprint} is the number of the Sprint where the User Story were treated. \\ \\
+\textbf{Sprint} is the number of the Sprint where the User Story was treated. \\ \\
 \textbf{User Story} includes the user story statement. \\
 \\
